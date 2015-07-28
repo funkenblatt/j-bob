@@ -44,3 +44,14 @@ Example of using J-Bob in Racket, using the Dracula package:
 ;; Run every proof in the book, up to and including the proof of align/align:
 (dethm.align/align)
 ```
+
+Example of using J-Bob in Racket, standalone, when running from the racket/ directory:
+
+```lisp
+;; Load J-Bob:
+(require "j-bob.rkt")
+;; Load the transcript of all the proofs in the book:
+(require "little-prover.rkt")
+;; Run every proof in the book, etc.
+(dethm.align/align)
+```
